@@ -1,0 +1,350 @@
+[2025-07-01 12:44:35.595][INF] MFAWPF Version: [mfa.version=v1.2.4.4] Interface Version: [data.version=v1.5.1] 
+[2025-07-01 12:44:38.168][ERR] 请求GitHub时发生错误: Forbidden - rate limit exceeded
+[2025-07-01 12:44:38.169][ERR] 处理GitHub响应时发生错误: 请求GitHub时发生错误: Forbidden - rate limit exceeded
+[2025-07-01 12:44:38.180][ERR] System.Exception: 处理GitHub响应时发生错误: 请求GitHub时发生错误: Forbidden - rate limit exceeded
+   at MFAWPF.Utils.VersionChecker.GetLatestVersionFromGithub(String owner, String repo)
+   at MFAWPF.Utils.VersionChecker.CheckForGUIUpdates()
+[2025-07-01 12:44:46.249][INF] MFAWPF Version: [mfa.version=v1.2.4.4] Interface Version: [data.version=v1.5.1] 
+[2025-07-01 12:44:46.302][INF] 正在载入资源
+[2025-07-01 12:44:46.302][INF] C:\Users\Administrator\Desktop\MET-win-x86_64-v1.5.1\resource\base
+[2025-07-01 12:44:46.304][INF] 正在连接至模拟器......
+[2025-07-01 12:44:46.695][INF] GPU acceleration: True
+[2025-07-01 12:44:46.696][INF] 载入资源成功
+[2025-07-01 12:44:46.696][INF] 正在初始化控制器
+[2025-07-01 12:44:46.697][INF] AdbPath: adb
+[2025-07-01 12:44:46.697][INF] AdbSerial: 
+[2025-07-01 12:44:46.697][INF] ScreenCap: Default
+[2025-07-01 12:44:46.698][INF] Input: MinitouchAndAdbKey
+[2025-07-01 12:44:46.698][INF] Config: {}
+[2025-07-01 12:44:46.703][WRN] 初始化控制器时发生错误！
+[2025-07-01 12:44:46.714][ERR] System.ArgumentException: The value cannot be an empty string. (Parameter 'adbSerial')
+   at System.ArgumentException.ThrowNullOrEmptyException(String argument, String paramName)
+   at System.ArgumentException.ThrowIfNullOrEmpty(String argument, String paramName)
+   at MaaFramework.Binding.MaaAdbController..ctor(String adbPath, String adbSerial, AdbScreencapMethods screencapMethods, AdbInputMethods inputMethods, String config, String agentPath, LinkOption link, CheckStatusOption check) in D:\a\MaaFramework.Binding.CSharp\MaaFramework.Binding.CSharp\src\MaaFramework.Binding.Native\MaaController\MaaAdbController.cs:line 29
+   at MFAWPF.Utils.MaaProcessor.InitializeController()
+   at MFAWPF.Utils.MaaProcessor.InitializeMaaTasker()
+[2025-07-01 12:44:46.716][INF] 连接失败
+正在尝试重连
+[2025-07-01 12:44:46.844][INF] 正在载入资源
+[2025-07-01 12:44:46.844][INF] C:\Users\Administrator\Desktop\MET-win-x86_64-v1.5.1\resource\base
+[2025-07-01 12:44:46.957][INF] GPU acceleration: True
+[2025-07-01 12:44:46.957][INF] 载入资源成功
+[2025-07-01 12:44:46.957][INF] 正在初始化控制器
+[2025-07-01 12:44:46.957][INF] AdbPath: adb
+[2025-07-01 12:44:46.957][INF] AdbSerial: 
+[2025-07-01 12:44:46.957][INF] ScreenCap: Default
+[2025-07-01 12:44:46.957][INF] Input: MinitouchAndAdbKey
+[2025-07-01 12:44:46.957][INF] Config: {}
+[2025-07-01 12:44:46.958][WRN] 初始化控制器时发生错误！
+[2025-07-01 12:44:46.958][ERR] System.ArgumentException: The value cannot be an empty string. (Parameter 'adbSerial')
+   at System.ArgumentException.ThrowNullOrEmptyException(String argument, String paramName)
+   at System.ArgumentException.ThrowIfNullOrEmpty(String argument, String paramName)
+   at MaaFramework.Binding.MaaAdbController..ctor(String adbPath, String adbSerial, AdbScreencapMethods screencapMethods, AdbInputMethods inputMethods, String config, String agentPath, LinkOption link, CheckStatusOption check) in D:\a\MaaFramework.Binding.CSharp\MaaFramework.Binding.CSharp\src\MaaFramework.Binding.Native\MaaController\MaaAdbController.cs:line 29
+   at MFAWPF.Utils.MaaProcessor.InitializeController()
+   at MFAWPF.Utils.MaaProcessor.InitializeMaaTasker()
+[2025-07-01 12:44:46.959][INF] 正在载入资源
+[2025-07-01 12:44:46.959][INF] C:\Users\Administrator\Desktop\MET-win-x86_64-v1.5.1\resource\base
+[2025-07-01 12:44:46.967][INF] 连接失败
+正在尝试重启 ADB Server
+[2025-07-01 12:44:47.054][INF] GPU acceleration: True
+[2025-07-01 12:44:47.055][INF] 载入资源成功
+[2025-07-01 12:44:47.055][INF] 正在初始化控制器
+[2025-07-01 12:44:47.055][INF] AdbPath: adb
+[2025-07-01 12:44:47.055][INF] AdbSerial: 
+[2025-07-01 12:44:47.055][INF] ScreenCap: Default
+[2025-07-01 12:44:47.055][INF] Input: MinitouchAndAdbKey
+[2025-07-01 12:44:47.055][INF] Config: {}
+[2025-07-01 12:44:47.055][WRN] 初始化控制器时发生错误！
+[2025-07-01 12:44:47.056][ERR] System.ArgumentException: The value cannot be an empty string. (Parameter 'adbSerial')
+   at System.ArgumentException.ThrowNullOrEmptyException(String argument, String paramName)
+   at System.ArgumentException.ThrowIfNullOrEmpty(String argument, String paramName)
+   at MaaFramework.Binding.MaaAdbController..ctor(String adbPath, String adbSerial, AdbScreencapMethods screencapMethods, AdbInputMethods inputMethods, String config, String agentPath, LinkOption link, CheckStatusOption check) in D:\a\MaaFramework.Binding.CSharp\MaaFramework.Binding.CSharp\src\MaaFramework.Binding.Native\MaaController\MaaAdbController.cs:line 29
+   at MFAWPF.Utils.MaaProcessor.InitializeController()
+   at MFAWPF.Utils.MaaProcessor.InitializeMaaTasker()
+[2025-07-01 12:44:47.058][INF] 正在载入资源
+[2025-07-01 12:44:47.058][INF] C:\Users\Administrator\Desktop\MET-win-x86_64-v1.5.1\resource\base
+[2025-07-01 12:44:47.065][INF] 连接失败
+正在尝试关闭并重启 ADB 进程
+[2025-07-01 12:44:47.159][INF] GPU acceleration: True
+[2025-07-01 12:44:47.159][INF] 载入资源成功
+[2025-07-01 12:44:47.159][INF] 正在初始化控制器
+[2025-07-01 12:44:47.159][INF] AdbPath: adb
+[2025-07-01 12:44:47.159][INF] AdbSerial: 
+[2025-07-01 12:44:47.159][INF] ScreenCap: Default
+[2025-07-01 12:44:47.159][INF] Input: MinitouchAndAdbKey
+[2025-07-01 12:44:47.159][INF] Config: {}
+[2025-07-01 12:44:47.160][WRN] 初始化控制器时发生错误！
+[2025-07-01 12:44:47.160][ERR] System.ArgumentException: The value cannot be an empty string. (Parameter 'adbSerial')
+   at System.ArgumentException.ThrowNullOrEmptyException(String argument, String paramName)
+   at System.ArgumentException.ThrowIfNullOrEmpty(String argument, String paramName)
+   at MaaFramework.Binding.MaaAdbController..ctor(String adbPath, String adbSerial, AdbScreencapMethods screencapMethods, AdbInputMethods inputMethods, String config, String agentPath, LinkOption link, CheckStatusOption check) in D:\a\MaaFramework.Binding.CSharp\MaaFramework.Binding.CSharp\src\MaaFramework.Binding.Native\MaaController\MaaAdbController.cs:line 29
+   at MFAWPF.Utils.MaaProcessor.InitializeController()
+   at MFAWPF.Utils.MaaProcessor.InitializeMaaTasker()
+[2025-07-01 12:44:47.160][WRN] 连接失败
+[2025-07-01 12:44:47.169][INF] 连接失败
+[2025-07-01 12:44:47.170][INF] 正在停止......
+[2025-07-01 12:44:47.171][INF] 已放弃本次任务
+[2025-07-01 12:45:02.346][INF] MFAWPF Version: [mfa.version=v1.2.4.4] Interface Version: [data.version=v1.5.1] 
+[2025-07-01 12:45:02.364][INF] 正在载入资源
+[2025-07-01 12:45:02.364][INF] C:\Users\Administrator\Desktop\MET-win-x86_64-v1.5.1\resource\base
+[2025-07-01 12:45:02.367][INF] 正在连接至模拟器......
+[2025-07-01 12:45:02.457][INF] GPU acceleration: True
+[2025-07-01 12:45:02.458][INF] 载入资源成功
+[2025-07-01 12:45:02.458][INF] 正在初始化控制器
+[2025-07-01 12:45:02.458][INF] AdbPath: D:/Program Files/Netease/MuMu Player 12/shell/adb.exe
+[2025-07-01 12:45:02.458][INF] AdbSerial: 127.0.0.1:16384
+[2025-07-01 12:45:02.458][INF] ScreenCap: Default
+[2025-07-01 12:45:02.458][INF] Input: MinitouchAndAdbKey
+[2025-07-01 12:45:02.458][INF] Config: {"extras":{"mumu":{"enable":true,"index":0,"path":"D:/Program Files/Netease/MuMu Player 12"}}
+[2025-07-01 12:45:10.135][INF] 初始化控制器成功
+[2025-07-01 12:45:10.142][INF] 正在注册自定义识别器
+[2025-07-01 12:45:10.142][INF] 正在注册自定义行动
+[2025-07-01 12:45:10.178][INF] 截图耗时: 11ms(Default)
+[2025-07-01 12:45:10.179][INF] 开始任务: 模拟器请用1280*720(dpi240)分辨率!!!  |  此项目在GitHub上免费开源,如果你是付费购买,请立刻退款
+[2025-07-01 12:45:10.624][INF] 任务已全部完成！
+(用时 0h 0m 8s)
+[2025-07-01 12:45:24.510][INF] MFAWPF Version: [mfa.version=v1.2.4.4] Interface Version: [data.version=v1.5.1] 
+[2025-07-01 12:45:24.529][INF] 正在载入资源
+[2025-07-01 12:45:24.529][INF] C:\Users\Administrator\Desktop\MET-win-x86_64-v1.5.1\resource\base
+[2025-07-01 12:45:24.529][INF] 正在连接至模拟器......
+[2025-07-01 12:45:24.644][INF] GPU acceleration: True
+[2025-07-01 12:45:24.644][INF] 载入资源成功
+[2025-07-01 12:45:24.644][INF] 正在初始化控制器
+[2025-07-01 12:45:24.644][INF] AdbPath: D:/Program Files/Netease/MuMu Player 12/shell/adb.exe
+[2025-07-01 12:45:24.644][INF] AdbSerial: 127.0.0.1:16384
+[2025-07-01 12:45:24.644][INF] ScreenCap: Default
+[2025-07-01 12:45:24.644][INF] Input: MinitouchAndAdbKey
+[2025-07-01 12:45:24.644][INF] Config: {"extras":{"mumu":{"enable":true,"index":0,"path":"D:/Program Files/Netease/MuMu Player 12"}}
+[2025-07-01 12:45:29.851][INF] 初始化控制器成功
+[2025-07-01 12:45:29.852][INF] 正在注册自定义识别器
+[2025-07-01 12:45:29.852][INF] 正在注册自定义行动
+[2025-07-01 12:45:29.873][INF] 截图耗时: 15ms(Default)
+[2025-07-01 12:45:29.873][INF] 开始任务: 9.25新版自动多人战
+[2025-07-01 12:46:17.756][INF] 出现这个说明识别超时自动重启了,如果一直出现这个并且只重启请联系作者
+[2025-07-01 12:47:42.419][INF] 正在停止......
+[2025-07-01 12:47:47.136][INF] 已放弃本次任务
+[2025-07-01 14:35:17.723][INF] MFAWPF Version: [mfa.version=v1.2.4.4] Interface Version: [data.version=v1.5.1] 
+[2025-07-01 14:35:20.489][ERR] 处理GitHub响应时发生错误: One or more errors occurred. (由于目标计算机积极拒绝，无法连接。 (127.0.0.1:1088))
+[2025-07-01 14:35:20.509][ERR] System.Exception: 处理GitHub响应时发生错误: One or more errors occurred. (由于目标计算机积极拒绝，无法连接。 (127.0.0.1:1088))
+   at MFAWPF.Utils.VersionChecker.GetLatestVersionFromGithub(String owner, String repo)
+   at MFAWPF.Utils.VersionChecker.CheckForResourceUpdates()
+[2025-07-01 14:35:22.515][ERR] 处理GitHub响应时发生错误: One or more errors occurred. (由于目标计算机积极拒绝，无法连接。 (127.0.0.1:1088))
+[2025-07-01 14:35:22.518][ERR] System.Exception: 处理GitHub响应时发生错误: One or more errors occurred. (由于目标计算机积极拒绝，无法连接。 (127.0.0.1:1088))
+   at MFAWPF.Utils.VersionChecker.GetLatestVersionFromGithub(String owner, String repo)
+   at MFAWPF.Utils.VersionChecker.CheckForGUIUpdates()
+[2025-07-01 14:38:16.228][INF] MFAWPF Version: [mfa.version=v1.2.4.4] Interface Version: [data.version=v1.5.1] 
+[2025-07-01 14:38:16.266][INF] 正在载入资源
+[2025-07-01 14:38:16.266][INF] C:\Users\Administrator\Desktop\MET-win-x86_64-v1.5.1\resource\base
+[2025-07-01 14:38:16.270][INF] 正在连接至模拟器......
+[2025-07-01 14:38:16.677][INF] GPU acceleration: True
+[2025-07-01 14:38:16.677][INF] 载入资源成功
+[2025-07-01 14:38:16.677][INF] 正在初始化控制器
+[2025-07-01 14:38:16.677][INF] AdbPath: D:/Program Files/Netease/MuMu Player 12/shell/adb.exe
+[2025-07-01 14:38:16.678][INF] AdbSerial: 127.0.0.1:16384
+[2025-07-01 14:38:16.678][INF] ScreenCap: Default
+[2025-07-01 14:38:16.678][INF] Input: MinitouchAndAdbKey
+[2025-07-01 14:38:16.678][INF] Config: {"extras":{"mumu":{"enable":true,"index":0,"path":"D:/Program Files/Netease/MuMu Player 12"}}
+[2025-07-01 14:38:21.437][INF] 初始化控制器成功
+[2025-07-01 14:38:21.443][INF] 正在注册自定义识别器
+[2025-07-01 14:38:21.443][INF] 正在注册自定义行动
+[2025-07-01 14:38:21.483][INF] 截图耗时: 11ms(Default)
+[2025-07-01 14:38:21.484][INF] 开始任务: 自动主线扫荡(确保剩余足够的体力药)
+[2025-07-01 14:39:01.465][INF] 正在停止......
+[2025-07-01 14:39:02.242][INF] 已放弃本次任务
+[2025-07-01 14:40:57.367][INF] MFAWPF Version: [mfa.version=v1.2.4.4] Interface Version: [data.version=v1.5.1] 
+[2025-07-01 14:41:00.038][ERR] 处理GitHub响应时发生错误: One or more errors occurred. (由于目标计算机积极拒绝，无法连接。 (127.0.0.1:1088))
+[2025-07-01 14:41:00.064][ERR] System.Exception: 处理GitHub响应时发生错误: One or more errors occurred. (由于目标计算机积极拒绝，无法连接。 (127.0.0.1:1088))
+   at MFAWPF.Utils.VersionChecker.GetLatestVersionFromGithub(String owner, String repo)
+   at MFAWPF.Utils.VersionChecker.CheckForResourceUpdates()
+[2025-07-01 14:41:02.070][ERR] 处理GitHub响应时发生错误: One or more errors occurred. (由于目标计算机积极拒绝，无法连接。 (127.0.0.1:1088))
+[2025-07-01 14:41:02.071][ERR] System.Exception: 处理GitHub响应时发生错误: One or more errors occurred. (由于目标计算机积极拒绝，无法连接。 (127.0.0.1:1088))
+   at MFAWPF.Utils.VersionChecker.GetLatestVersionFromGithub(String owner, String repo)
+   at MFAWPF.Utils.VersionChecker.CheckForGUIUpdates()
+[2025-07-01 14:41:06.143][INF] MFAWPF Version: [mfa.version=v1.2.4.4] Interface Version: [data.version=v1.5.1] 
+[2025-07-01 14:41:06.218][INF] 正在载入资源
+[2025-07-01 14:41:06.218][INF] C:\Users\Administrator\Desktop\MET-win-x86_64-v1.5.1\resource\base
+[2025-07-01 14:41:06.219][INF] 正在连接至模拟器......
+[2025-07-01 14:41:06.560][INF] GPU acceleration: True
+[2025-07-01 14:41:06.560][INF] 载入资源成功
+[2025-07-01 14:41:06.560][INF] 正在初始化控制器
+[2025-07-01 14:41:06.561][INF] AdbPath: D:/Program Files/Netease/MuMu Player 12/shell/adb.exe
+[2025-07-01 14:41:06.562][INF] AdbSerial: 127.0.0.1:16384
+[2025-07-01 14:41:06.562][INF] ScreenCap: Default
+[2025-07-01 14:41:06.562][INF] Input: MinitouchAndAdbKey
+[2025-07-01 14:41:06.562][INF] Config: {"extras":{"mumu":{"enable":true,"index":0,"path":"D:/Program Files/Netease/MuMu Player 12"}}
+[2025-07-01 14:41:11.411][INF] 初始化控制器成功
+[2025-07-01 14:41:11.420][INF] 正在注册自定义识别器
+[2025-07-01 14:41:11.420][INF] 正在注册自定义行动
+[2025-07-01 14:41:11.464][INF] 截图耗时: 15ms(Default)
+[2025-07-01 14:41:11.464][INF] 开始任务: 自动主线扫荡(确保剩余足够的体力药)
+[2025-07-01 14:42:31.640][INF] 任务已全部完成！
+(用时 0h 1m 25s)
+[2025-07-01 14:42:49.069][INF] MFAWPF Version: [mfa.version=v1.2.4.4] Interface Version: [data.version=v1.5.1] 
+[2025-07-01 14:42:49.093][INF] 正在载入资源
+[2025-07-01 14:42:49.093][INF] C:\Users\Administrator\Desktop\MET-win-x86_64-v1.5.1\resource\base
+[2025-07-01 14:42:49.094][INF] 正在连接至模拟器......
+[2025-07-01 14:42:49.180][INF] GPU acceleration: True
+[2025-07-01 14:42:49.180][INF] 载入资源成功
+[2025-07-01 14:42:49.180][INF] 正在初始化控制器
+[2025-07-01 14:42:49.180][INF] AdbPath: D:/Program Files/Netease/MuMu Player 12/shell/adb.exe
+[2025-07-01 14:42:49.180][INF] AdbSerial: 127.0.0.1:16384
+[2025-07-01 14:42:49.180][INF] ScreenCap: Default
+[2025-07-01 14:42:49.181][INF] Input: MinitouchAndAdbKey
+[2025-07-01 14:42:49.181][INF] Config: {"extras":{"mumu":{"enable":true,"index":0,"path":"D:/Program Files/Netease/MuMu Player 12"}}
+[2025-07-01 14:42:53.808][INF] 初始化控制器成功
+[2025-07-01 14:42:53.809][INF] 正在注册自定义识别器
+[2025-07-01 14:42:53.809][INF] 正在注册自定义行动
+[2025-07-01 14:42:53.824][INF] 截图耗时: 11ms(Default)
+[2025-07-01 14:42:53.825][INF] 开始任务: 扫荡一次素材关卡
+[2025-07-01 14:43:06.164][INF] 任务已全部完成！
+(用时 0h 0m 17s)
+[2025-07-01 15:53:20.499][INF] MFAWPF Version: [mfa.version=v1.2.4.4] Interface Version: [data.version=v1.5.1] 
+[2025-07-01 15:53:23.206][ERR] 处理GitHub响应时发生错误: One or more errors occurred. (由于目标计算机积极拒绝，无法连接。 (127.0.0.1:1088))
+[2025-07-01 15:53:23.230][ERR] System.Exception: 处理GitHub响应时发生错误: One or more errors occurred. (由于目标计算机积极拒绝，无法连接。 (127.0.0.1:1088))
+   at MFAWPF.Utils.VersionChecker.GetLatestVersionFromGithub(String owner, String repo)
+   at MFAWPF.Utils.VersionChecker.CheckForResourceUpdates()
+[2025-07-01 15:53:25.236][ERR] 处理GitHub响应时发生错误: One or more errors occurred. (由于目标计算机积极拒绝，无法连接。 (127.0.0.1:1088))
+[2025-07-01 15:53:25.237][ERR] System.Exception: 处理GitHub响应时发生错误: One or more errors occurred. (由于目标计算机积极拒绝，无法连接。 (127.0.0.1:1088))
+   at MFAWPF.Utils.VersionChecker.GetLatestVersionFromGithub(String owner, String repo)
+   at MFAWPF.Utils.VersionChecker.CheckForGUIUpdates()
+[2025-07-01 15:54:13.279][INF] MFAWPF Version: [mfa.version=v1.2.4.4] Interface Version: [data.version=v1.5.1] 
+[2025-07-01 15:54:15.948][ERR] 处理GitHub响应时发生错误: One or more errors occurred. (由于目标计算机积极拒绝，无法连接。 (127.0.0.1:1088))
+[2025-07-01 15:54:15.969][ERR] System.Exception: 处理GitHub响应时发生错误: One or more errors occurred. (由于目标计算机积极拒绝，无法连接。 (127.0.0.1:1088))
+   at MFAWPF.Utils.VersionChecker.GetLatestVersionFromGithub(String owner, String repo)
+   at MFAWPF.Utils.VersionChecker.CheckForResourceUpdates()
+[2025-07-01 15:54:17.974][ERR] 处理GitHub响应时发生错误: One or more errors occurred. (由于目标计算机积极拒绝，无法连接。 (127.0.0.1:1088))
+[2025-07-01 15:54:17.975][ERR] System.Exception: 处理GitHub响应时发生错误: One or more errors occurred. (由于目标计算机积极拒绝，无法连接。 (127.0.0.1:1088))
+   at MFAWPF.Utils.VersionChecker.GetLatestVersionFromGithub(String owner, String repo)
+   at MFAWPF.Utils.VersionChecker.CheckForGUIUpdates()
+[2025-07-01 15:56:22.725][INF] MFAWPF Version: [mfa.version=v1.2.4.4] Interface Version: [data.version=v1.5.1] 
+[2025-07-01 15:56:25.423][ERR] 处理GitHub响应时发生错误: One or more errors occurred. (由于目标计算机积极拒绝，无法连接。 (127.0.0.1:1088))
+[2025-07-01 15:56:25.455][ERR] System.Exception: 处理GitHub响应时发生错误: One or more errors occurred. (由于目标计算机积极拒绝，无法连接。 (127.0.0.1:1088))
+   at MFAWPF.Utils.VersionChecker.GetLatestVersionFromGithub(String owner, String repo)
+   at MFAWPF.Utils.VersionChecker.CheckForResourceUpdates()
+[2025-07-01 15:56:27.462][ERR] 处理GitHub响应时发生错误: One or more errors occurred. (由于目标计算机积极拒绝，无法连接。 (127.0.0.1:1088))
+[2025-07-01 15:56:27.463][ERR] System.Exception: 处理GitHub响应时发生错误: One or more errors occurred. (由于目标计算机积极拒绝，无法连接。 (127.0.0.1:1088))
+   at MFAWPF.Utils.VersionChecker.GetLatestVersionFromGithub(String owner, String repo)
+   at MFAWPF.Utils.VersionChecker.CheckForGUIUpdates()
+[2025-07-01 15:59:16.620][ERR] 处理GitHub响应时发生错误: One or more errors occurred. (由于目标计算机积极拒绝，无法连接。 (127.0.0.1:1088))
+[2025-07-01 15:59:16.622][ERR] System.Exception: 处理GitHub响应时发生错误: One or more errors occurred. (由于目标计算机积极拒绝，无法连接。 (127.0.0.1:1088))
+   at MFAWPF.Utils.VersionChecker.GetLatestVersionFromGithub(String owner, String repo)
+   at MFAWPF.Utils.VersionChecker.UpdateMFA(Boolean noDialog)
+[2025-07-01 16:00:01.326][INF] Loading configuration file...
+[2025-07-01 16:00:03.287][INF] MFAWPF Version: [mfa.version=v1.3.1.0] Interface Version: [data.version=v1.5.1] 
+[2025-07-01 16:00:03.360][INF] 触控模式:MinitouchAndAdbKey,捕获模式:Default
+[2025-07-01 16:00:04.235][INF] MFAWPF Version: [mfa.version=v1.3.1.0] Interface Version: [data.version=v1.5.1] 
+[2025-07-01 16:00:04.236][INF] 触控模式:MinitouchAndAdbKey,捕获模式:Default
+[2025-07-01 16:00:04.255][INF] 触控模式:MinitouchAndAdbKey,捕获模式:Default
+[2025-07-01 16:00:04.266][INF] 正在载入资源
+[2025-07-01 16:00:04.266][INF] Resource: C:\Users\Administrator\Desktop\MET-win-x86_64-v1.5.1\/resource/base
+[2025-07-01 16:00:04.296][INF] 正在连接至Emulator......
+[2025-07-01 16:00:04.576][INF] GPU acceleration: Auto
+[2025-07-01 16:00:04.577][INF] AdbPath: D:/Program Files/Netease/MuMu Player 12/shell/adb.exe
+[2025-07-01 16:00:04.577][INF] AdbSerial: 127.0.0.1:16384
+[2025-07-01 16:00:04.577][INF] ScreenCap: Default
+[2025-07-01 16:00:04.577][INF] Input: MinitouchAndAdbKey
+[2025-07-01 16:00:04.578][INF] Config: {"extras":{"mumu":{"enable":true,"index":0,"path":"D:/Program Files/Netease/MuMu Player 12"}}
+[2025-07-01 16:00:09.208][INF] 正在注册自定义识别器
+[2025-07-01 16:00:09.208][INF] 正在注册自定义行动
+[2025-07-01 16:00:13.505][INF] 开始执行任务: 更新软件
+[2025-07-01 16:00:13.516][INF] 任务已全部完成！
+(用时 0h 0m 9s)
+[2025-07-01 16:00:30.399][ERR] System.Exception: One or more errors occurred. (The SSL connection could not be established, see inner exception.)
+   at MFAWPF.Helper.VersionChecker.GetDownloadUrlFromMirror(String version, String resId, String cdk, String& url, String& latestVersion, String userAgent, Boolean isUI, Boolean onlyCheck) in /home/runner/work/MFAWPF/MFAWPF/Helper/VersionChecker.cs:line 1184
+   at MFAWPF.Helper.VersionChecker.CheckGuiVersionWithMirrorApi() in /home/runner/work/MFAWPF/MFAWPF/Helper/VersionChecker.cs:line 1388
+[2025-07-01 16:00:30.400][INF] 任务完成: 更新软件
+[2025-07-01 16:00:30.400][INF] 开始执行任务: 更新资源
+[2025-07-01 16:00:30.401][INF] 任务完成: 更新资源
+[2025-07-01 16:05:01.955][INF] Loading configuration file...
+[2025-07-01 16:05:03.379][INF] MFAWPF Version: [mfa.version=v1.3.1.0] Interface Version: [data.version=v1.5.1] 
+[2025-07-01 16:05:03.443][INF] 触控模式:MinitouchAndAdbKey,捕获模式:Default
+[2025-07-01 16:05:04.287][INF] MFAWPF Version: [mfa.version=v1.3.1.0] Interface Version: [data.version=v1.5.1] 
+[2025-07-01 16:05:04.288][INF] 触控模式:MinitouchAndAdbKey,捕获模式:Default
+[2025-07-01 16:05:04.303][INF] 触控模式:MinitouchAndAdbKey,捕获模式:Default
+[2025-07-01 16:05:04.320][INF] 正在载入资源
+[2025-07-01 16:05:04.320][INF] Resource: C:\Users\Administrator\Desktop\MET-win-x86_64-v1.5.1\/resource/base
+[2025-07-01 16:05:04.325][INF] 正在连接至Emulator......
+[2025-07-01 16:05:04.705][INF] GPU acceleration: Auto
+[2025-07-01 16:05:04.706][INF] AdbPath: D:/Program Files/Netease/MuMu Player 12/shell/adb.exe
+[2025-07-01 16:05:04.706][INF] AdbSerial: 127.0.0.1:16384
+[2025-07-01 16:05:04.706][INF] ScreenCap: Default
+[2025-07-01 16:05:04.706][INF] Input: MinitouchAndAdbKey
+[2025-07-01 16:05:04.706][INF] Config: {"extras":{"mumu":{"enable":true,"index":0,"path":"D:/Program Files/Netease/MuMu Player 12"}}
+[2025-07-01 16:05:09.369][INF] 正在注册自定义识别器
+[2025-07-01 16:05:09.369][INF] 正在注册自定义行动
+[2025-07-01 16:51:39.305][INF] Loading configuration file...
+[2025-07-01 16:51:41.110][INF] MFAWPF Version: [mfa.version=v1.3.1.0] Interface Version: [data.version=v1.5.1] 
+[2025-07-01 16:51:41.164][INF] 触控模式:MinitouchAndAdbKey,捕获模式:Default
+[2025-07-01 16:51:42.152][INF] MFAWPF Version: [mfa.version=v1.3.1.0] Interface Version: [data.version=v1.5.1] 
+[2025-07-01 16:51:42.153][INF] 触控模式:MinitouchAndAdbKey,捕获模式:Default
+[2025-07-01 16:51:42.171][INF] 触控模式:MinitouchAndAdbKey,捕获模式:Default
+[2025-07-01 16:51:42.181][INF] 正在载入资源
+[2025-07-01 16:51:42.181][INF] Resource: C:\Users\Administrator\Desktop\Maa悠久之树v1.5.1\/resource/base
+[2025-07-01 16:51:42.293][INF] 正在连接至Emulator......
+[2025-07-01 16:51:42.486][INF] GPU acceleration: Auto
+[2025-07-01 16:51:42.488][INF] AdbPath: D:/Program Files/Netease/MuMu Player 12/shell/adb.exe
+[2025-07-01 16:51:42.488][INF] AdbSerial: 127.0.0.1:16384
+[2025-07-01 16:51:42.488][INF] ScreenCap: Default
+[2025-07-01 16:51:42.488][INF] Input: MinitouchAndAdbKey
+[2025-07-01 16:51:42.488][INF] Config: {"extras":{"mumu":{"enable":true,"index":0,"path":"D:/Program Files/Netease/MuMu Player 12"}}
+[2025-07-01 16:51:45.073][WRN] 初始化控制器时发生错误！
+[2025-07-01 16:51:45.144][ERR] MaaFramework.Binding.MaaJobStatusException: IMaaController failed to connect to the device. MaaJobStatus cannot be Failed.
+System.Object[]
+   at MaaFramework.Binding.MaaJobStatusExtensions.ThrowIfNot(MaaJobStatus current, MaaJobStatus correct, String message, Object[] args)
+   at MaaFramework.Binding.MaaController.LinkStartOnConstructed(CheckStatusOption check, Object[] args)
+   at MaaFramework.Binding.MaaAdbController..ctor(AdbDeviceInfo adbDevice, String agentPath, LinkOption link, CheckStatusOption check)
+   at MaaFramework.Binding.MaaAdbController..ctor(String adbPath, String adbSerial, AdbScreencapMethods screencapMethods, AdbInputMethods inputMethods, String config, String agentPath, LinkOption link, CheckStatusOption check)
+   at MFAWPF.Extensions.Maa.MaaProcessor.InitializeController(Boolean isAdb) in /home/runner/work/MFAWPF/MFAWPF/Extensions/Maa/MaaProcessor.cs:line 1221
+   at MFAWPF.Extensions.Maa.MaaProcessor.<>c__DisplayClass88_0.<InitializeMaaTasker>b__3() in /home/runner/work/MFAWPF/MFAWPF/Extensions/Maa/MaaProcessor.cs:line 1008
+   at MFAWPF.Helper.TaskManager.<>c__DisplayClass3_0`1.<RunTaskAsync>b__0() in /home/runner/work/MFAWPF/MFAWPF/Helper/TaskManager.cs:line 121
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at MFAWPF.Helper.TaskManager.RunTaskAsync[TResult](Func`1 function, CancellationToken token, Action`1 handleError, String name, Boolean catchException, Boolean shouldLog) in /home/runner/work/MFAWPF/MFAWPF/Helper/TaskManager.cs:line 118
+[2025-07-01 16:51:45.157][INF] 开始执行任务: 更新软件
+[2025-07-01 16:51:45.506][INF] 任务完成: 更新软件
+[2025-07-01 16:51:45.507][INF] 开始执行任务: 更新资源
+[2025-07-01 16:51:45.508][INF] 任务完成: 更新资源
+[2025-07-01 16:51:45.836][INF] 任务已全部完成！
+(用时 0h 0m 2s)
+[2025-07-01 16:51:49.757][ERR] Configuration Default is current configuration, cannot delete
+[2025-07-01 17:09:58.012][INF] Loading configuration file...
+[2025-07-01 17:09:59.458][INF] MFAWPF Version: [mfa.version=v1.3.1.0] Interface Version: [data.version=v1.5.1] 
+[2025-07-01 17:09:59.513][INF] 触控模式:MinitouchAndAdbKey,捕获模式:Default
+[2025-07-01 17:10:00.426][INF] MFAWPF Version: [mfa.version=v1.3.1.0] Interface Version: [data.version=v1.5.1] 
+[2025-07-01 17:10:00.426][INF] 触控模式:MinitouchAndAdbKey,捕获模式:Default
+[2025-07-01 17:10:00.441][INF] 触控模式:MinitouchAndAdbKey,捕获模式:Default
+[2025-07-01 17:10:00.457][INF] 正在载入资源
+[2025-07-01 17:10:00.457][INF] Resource: C:\Users\Administrator\Desktop\Maa悠久之树v1.5.1\/resource/base
+[2025-07-01 17:10:00.458][INF] 正在连接至Emulator......
+[2025-07-01 17:10:00.760][INF] GPU acceleration: Auto
+[2025-07-01 17:10:00.762][INF] AdbPath: D:/Program Files/Netease/MuMu Player 12/shell/adb.exe
+[2025-07-01 17:10:00.762][INF] AdbSerial: 127.0.0.1:16384
+[2025-07-01 17:10:00.762][INF] ScreenCap: Default
+[2025-07-01 17:10:00.762][INF] Input: MinitouchAndAdbKey
+[2025-07-01 17:10:00.762][INF] Config: {"extras":{"mumu":{"enable":true,"index":0,"path":"D:/Program Files/Netease/MuMu Player 12"}}
+[2025-07-01 17:10:03.336][WRN] 初始化控制器时发生错误！
+[2025-07-01 17:10:03.393][ERR] MaaFramework.Binding.MaaJobStatusException: IMaaController failed to connect to the device. MaaJobStatus cannot be Failed.
+System.Object[]
+   at MaaFramework.Binding.MaaJobStatusExtensions.ThrowIfNot(MaaJobStatus current, MaaJobStatus correct, String message, Object[] args)
+   at MaaFramework.Binding.MaaController.LinkStartOnConstructed(CheckStatusOption check, Object[] args)
+   at MaaFramework.Binding.MaaAdbController..ctor(AdbDeviceInfo adbDevice, String agentPath, LinkOption link, CheckStatusOption check)
+   at MaaFramework.Binding.MaaAdbController..ctor(String adbPath, String adbSerial, AdbScreencapMethods screencapMethods, AdbInputMethods inputMethods, String config, String agentPath, LinkOption link, CheckStatusOption check)
+   at MFAWPF.Extensions.Maa.MaaProcessor.InitializeController(Boolean isAdb) in /home/runner/work/MFAWPF/MFAWPF/Extensions/Maa/MaaProcessor.cs:line 1221
+   at MFAWPF.Extensions.Maa.MaaProcessor.<>c__DisplayClass88_0.<InitializeMaaTasker>b__3() in /home/runner/work/MFAWPF/MFAWPF/Extensions/Maa/MaaProcessor.cs:line 1008
+   at MFAWPF.Helper.TaskManager.<>c__DisplayClass3_0`1.<RunTaskAsync>b__0() in /home/runner/work/MFAWPF/MFAWPF/Helper/TaskManager.cs:line 121
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at MFAWPF.Helper.TaskManager.RunTaskAsync[TResult](Func`1 function, CancellationToken token, Action`1 handleError, String name, Boolean catchException, Boolean shouldLog) in /home/runner/work/MFAWPF/MFAWPF/Helper/TaskManager.cs:line 118
+[2025-07-01 17:10:03.411][INF] 任务已全部完成！
+(用时 0h 0m 2s)
+[2025-07-01 17:25:00.412][INF] MFAWPF Version: [mfa.version=v1.2.4.4] Interface Version: [data.version=v1.5.1] 
+[2025-07-01 17:35:45.532][INF] MFAWPF Version: [mfa.version=v1.2.4.4] Interface Version: [data.version=v1.5.1] 
+[2025-07-01 17:36:58.318][INF] MFAWPF Version: [mfa.version=v1.2.4.4] Interface Version: [data.version=v1.5.1] 

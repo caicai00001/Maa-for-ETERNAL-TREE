@@ -1,0 +1,189 @@
+{
+    "stopapp": {
+        "action": "StopApp",
+        "package": "com.orlesh.yjzs",
+        "next": "start",
+        "focus": true,
+        "focus_tip": "出现这个说明识别超时自动重启了,如果一直出现这个并且只重启请联系作者",
+        "focus_tip_color": "Red"
+    },
+    "启动游戏": {
+        "next": [
+            "主页检测",
+            "返回主页检测",
+            "退出",
+            "start"
+        ]
+    },
+    "start": {
+        "action": "StartApp",
+        "package": "com.orlesh.yjzs/com.orlesh.sdkdemo.PrivateActivity",
+        "post_delay": 3000,
+        "rate_limit": 600,
+        "timeout": 50000,
+        "next": [
+            "进入",
+            "进入_确定",
+            "重试"
+        ],
+        "on_error": "stopapp"
+    },
+    "进入_确定": {
+        "recognition": "OCR",
+        "expected": "确定",
+        "action": "Click",
+        "next": "start",
+        "post_delay": 5000
+    },
+    "进入": {
+        "recognition": "TemplateMatch",
+        "template": "进入.png",
+        "pre_delay": 1500,
+        "action": "Click",
+        "timeout": 30000,
+        "post_delay": 2000,
+        "next": "等待进入0",
+        "on_error": "stopapp"
+    },
+    "等待进入0": {
+        "recognition": "TemplateMatch",
+        "template": "标识.png",
+        "post_delay": 3000,
+        "next": "等待进入",
+        "on_error": "stopapp"
+    },
+    "等待进入": {
+        "recognition": "TemplateMatch",
+        "template": "标识.png",
+        "inverse": true,
+        "post_delay": 1000,
+        "pre_delay": 1000,
+        "next": "主页出击",
+        "on_error": [
+            "stopapp",
+            "等待进入0"
+        ],
+        "interrupt": [
+            "取消",
+            "点击空白处关闭",
+            "领取物资",
+            "关闭页面1"
+        ]
+    },
+    "重试": {
+        "recognition": "TemplateMatch",
+        "template": "重试.png",
+        "roi": [
+            358,
+            350,
+            582,
+            270
+        ],
+        "next": "stopapp"
+    },
+    "领取物资": {
+        "recognition": "TemplateMatch",
+        "template": "获得物资.png",
+        "roi": [
+            468,
+            89,
+            354,
+            139
+        ],
+        "action": "Click",
+        "post_delay": 800
+    },
+    "点击空白处关闭": {
+        "recognition": "OCR",
+        "expected": "点击空白处",
+        "action": "Click",
+        "post_delay": 800
+    },
+    "退出": {
+        "recognition": "TemplateMatch",
+        "template": "退出.png",
+        "roi": [
+            0,
+            0,
+            231,
+            106
+        ],
+        "action": "Click"
+    },
+    "取消": {
+        "recognition": "TemplateMatch",
+        "template": "取消.png",
+        "roi": [
+            389,
+            385,
+            521,
+            192
+        ],
+        "action": "Click",
+        "timeout": 3000,
+        "post_delay": 800
+    },
+    "关闭页面1": {
+        "recognition": "TemplateMatch",
+        "template": "x.png",
+        "timeout": 3000,
+        "action": "Click",
+        "post_delay": 800
+    },
+    "停止": {
+        "action": "DoNothing"
+    },
+    "网络连接断开": {
+        "recognition": "OCR",
+        "expected": [
+            "连接失败",
+            "网络已断开"
+        ],
+        "roi": [
+            490,
+            303,
+            309,
+            78
+        ],
+        "next": "stopapp_断网",
+        "focus": true,
+        "focus_tip": "网络连接断开,正在重新尝试",
+        "focus_tip_color": "Red"
+    },
+    "stopapp_断网": {
+        "action": "StopApp",
+        "package": "com.orlesh.yjzs",
+        "next": "start"
+    },
+    "主页检测": {
+        "recognition": "TemplateMatch",
+        "template": "主页出击.png",
+        "roi": [
+            1031,
+            325,
+            119,
+            54
+        ],
+        "interrupt": [
+            "取消",
+            "点击空白处关闭",
+            "领取物资",
+            "关闭页面1"
+        ],
+        "on_error": "stopapp"
+    },
+    "返回主页检测": {
+        "recognition": "TemplateMatch",
+        "template": "返回主页.png",
+        "action": "Click",
+        "roi": [
+            0,
+            0,
+            245,
+            74
+        ],
+        "timeout": 8000,
+        "next": "主页检测",
+        "on_error": "stopapp"
+    }
+}
