@@ -48,7 +48,7 @@ MET由 [MaaFramework](https://github.com/MaaXYZ/MaaFramework) 驱动
 
 # 下载地址
 [点此下载](https://github.com/caicai00001/Maa-for-ETERNAL-TREE/releases)(releases)
->**请下载`Maa-for-ETERNAL-TREEv1.5.2.zip`**
+>**请下载`Maa-for-ETERNAL-TREE`最新版本.zip**
 
 # 更新日志
 
