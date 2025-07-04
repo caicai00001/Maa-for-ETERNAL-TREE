@@ -43,21 +43,22 @@
             1,
             1
         ],
-        "post_delay": 700,
+        "post_delay": 1000,
         "duration": 500
     },
     "lc选择炼成属性": {
         "recognition": "OCR",
-        "expected": "光",
+        "expected": "暗",
         "roi": [
             0,
             563,
             1280,
             99
         ],
+        "post_wait_freezes": 300,
         "action": "Click",
-        "pre_delay": 300,
-        "post_delay": 300
+        "pre_delay": 500,
+        "post_delay": 500
     },
     "开始自动炼金": {
         "next": [
@@ -74,7 +75,7 @@
         "recognition": "TemplateMatch",
         "template": "工坊.png",
         "action": "Click",
-        "pre_delay": 300,
+        "pre_delay": 500,
         "roi": [
             841,
             605,
@@ -96,6 +97,7 @@
             342,
             211
         ],
+        "post_wait_freezes": 300,
         "pre_delay": 300,
         "timeout": 3000,
         "post_delay": 600,
@@ -112,6 +114,7 @@
             77
         ],
         "action": "Click",
+        "post_wait_freezes": 300,
         "pre_delay": 300,
         "timeout": 3000,
         "post_delay": 300,
@@ -203,7 +206,7 @@
         "on_error": "stopapp"
     },
     "一键炼成_常规熔炼_选择材料_幻象照片1": {
-        "post_delay": 700,
+        "post_delay": 1000,
         "next": [
             "一键炼成_常规熔炼_选择材料_幻象照片2",
             "一键炼成_常规熔炼_选择材料_龙照片1",
@@ -212,7 +215,7 @@
             "一键炼成_常规熔炼_已选完_炼成次数"
         ],
         "interrupt": "退出",
-        "enabled": true
+        "enabled": false
     },
     "一键炼成_常规熔炼_选择材料_幻象照片2": {
         "recognition": "TemplateMatch",
@@ -235,7 +238,7 @@
         "on_error": "stopapp"
     },
     "一键炼成_常规熔炼_选择材料_龙照片1": {
-        "post_delay": 700,
+        "post_delay": 1000,
         "next": [
             "一键炼成_常规熔炼_选择材料_龙照片2",
             "一键炼成_常规熔炼_选择材料_龙勋章2",
@@ -243,7 +246,7 @@
             "一键炼成_常规熔炼_已选完_炼成次数"
         ],
         "interrupt": "退出",
-        "enabled": true
+        "enabled": false
     },
     "一键炼成_常规熔炼_选择材料_龙照片2": {
         "recognition": "TemplateMatch",
@@ -277,7 +280,7 @@
             528,
             627
         ],
-        "enabled": true,
+        "enabled": false,
         "pre_delay": 100,
         "post_delay": 300,
         "next": [
@@ -298,7 +301,7 @@
             528,
             627
         ],
-        "enabled": true,
+        "enabled": false,
         "pre_delay": 100,
         "post_delay": 300,
         "next": [
@@ -492,6 +495,7 @@
     "点击珍品熔炼_-1": {
         "next": "点击珍品熔炼",
         "post_delay": 1000,
+        "post_wait_freezes": 300,
         "interrupt": [
             "lc点击确定/确认",
             "退出"
@@ -507,15 +511,18 @@
             65
         ],
         "action": "Click",
+        "pre_delay": 300,
+        "timeout": 3000,
+        "post_delay": 300,
+        "post_wait_freezes": 300,
+        "on_error": "stopapp",
         "next": [
             "一键炼成_珍品熔炼_筛选"
         ],
         "interrupt": [
             "lc选择炼成属性",
             "lc向右滑动"
-        ],
-        "timeout": 4000,
-        "on_error": "stopapp"
+        ]
     },
     "一键炼成_珍品熔炼_筛选": {
         "recognition": "OCR",
@@ -651,15 +658,18 @@
             52
         ],
         "action": "Click",
+        "pre_delay": 300,
+        "timeout": 3000,
+        "post_delay": 300,
+        "post_wait_freezes": 300,
+        "on_error": "stopapp",
         "next": [
             "一键炼成_高阶奥秘"
         ],
         "interrupt": [
             "lc选择炼成属性",
             "lc向右滑动"
-        ],
-        "timeout": 4000,
-        "on_error": "stopapp"
+        ]
     },
     "一键炼成_高阶奥秘": {
         "recognition": "OCR",
@@ -927,15 +937,18 @@
             65
         ],
         "action": "Click",
+        "pre_delay": 300,
+        "timeout": 3000,
+        "post_delay": 300,
+        "post_wait_freezes": 300,
+        "on_error": "stopapp",
         "next": [
             "一键炼成_常规奥秘"
         ],
         "interrupt": [
             "lc选择炼成属性",
             "lc向右滑动"
-        ],
-        "timeout": 4000,
-        "on_error": "stopapp"
+        ]
     },
     "一键炼成_常规奥秘": {
         "recognition": "OCR",
@@ -1206,6 +1219,7 @@
         "pre_delay": 300,
         "timeout": 3000,
         "post_delay": 300,
+        "post_wait_freezes": 300,
         "on_error": "stopapp",
         "next": [
             "一键炼成_常规熔炼_低级奥秘"

@@ -108,7 +108,9 @@
             231,
             106
         ],
-        "action": "Click"
+        "action": "Click",
+        "timeout": 800,
+        "post_delay": 300
     },
     "取消": {
         "recognition": "TemplateMatch",

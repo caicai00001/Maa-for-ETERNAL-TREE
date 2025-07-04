@@ -52,6 +52,11 @@ MET由 [MaaFramework](https://github.com/MaaXYZ/MaaFramework) 驱动
 
 # 更新日志
 
+**7月4日更新v1.5.4**
+- 修复`自动炼金`概率出现选择炼金属性错误问题。
+- 更新原有ocr-v4到最新版本ocr-v5
+- 更新Maa组件包
+
 **7月3日更新v1.5.3**
 - 修复`扫荡主线`只有大红瓶时无法正确使用的问题； 优化后支持单大红瓶和单小红瓶
 
@@ -113,3 +118,11 @@ MET由 [MaaFramework](https://github.com/MaaXYZ/MaaFramework) 驱动
 本项目由 **[MaaFramework](https://github.com/MaaXYZ/MaaFramework)** 强力驱动！
 
 感谢 **[MFAWPF](https://github.com/SweetSmellFox/MFAWPF)** 提供的GUI!
+
+
+## 鸣谢
+
+本项目由 **[MaaFramework](https://github.com/MaaXYZ/MaaFramework)** 强力驱动！
+ 
+感谢 **[MFAWPF](https://github.com/SweetSmellFox/MFAWPF)** 提供的GUI!
+
