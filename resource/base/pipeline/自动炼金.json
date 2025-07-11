@@ -174,7 +174,7 @@
             93
         ],
         "action": "Click",
-        "pre_delay": 100,
+        "pre_delay": 300,
         "post_delay": 300,
         "next": [
             "一键炼成_常规熔炼_添加材料"
@@ -192,8 +192,8 @@
             558,
             277
         ],
-        "pre_delay": 100,
-        "post_delay": 1000,
+        "pre_delay": 300,
+        "post_delay": 800,
         "next": [
             "一键炼成_常规熔炼_选择材料_幻象照片1",
             "一键炼成_常规熔炼_选择材料_龙照片1",
@@ -681,7 +681,7 @@
             93
         ],
         "action": "Click",
-        "pre_delay": 100,
+        "pre_delay": 300,
         "post_delay": 300,
         "next": [
             "一键炼成_高阶奥秘_添加材料1"
@@ -699,7 +699,7 @@
             558,
             277
         ],
-        "pre_delay": 100,
+        "pre_delay": 300,
         "post_delay": 800,
         "next": [
             "一键炼成结束",
@@ -772,7 +772,7 @@
             558,
             277
         ],
-        "pre_delay": 100,
+        "pre_delay": 300,
         "post_delay": 800,
         "next": [
             "一键炼成_高阶奥秘_添加材料2_无材料",
@@ -960,8 +960,8 @@
             93
         ],
         "action": "Click",
-        "pre_delay": 100,
-        "post_delay": 300,
+        "pre_delay": 500,
+        "post_delay": 500,
         "next": [
             "一键炼成_常规奥秘_添加材料1"
         ],
@@ -978,7 +978,7 @@
             558,
             277
         ],
-        "pre_delay": 100,
+        "pre_delay": 300,
         "post_delay": 800,
         "next": [
             "一键炼成结束",
@@ -1051,7 +1051,7 @@
             558,
             277
         ],
-        "pre_delay": 100,
+        "pre_delay": 300,
         "post_delay": 800,
         "next": [
             "一键炼成_常规奥秘_添加材料2_无材料",
