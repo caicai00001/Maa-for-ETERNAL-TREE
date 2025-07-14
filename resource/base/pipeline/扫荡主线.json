@@ -133,6 +133,7 @@
     "检测体力是否为两位数_是": {
         "recognition": "OCR",
         "expected": [
+            "0",
             "1",
             "2",
             "3",
@@ -168,6 +169,7 @@
     "检测体力是否为两位数_否": {
         "recognition": "OCR",
         "expected": [
+            "0",
             "1",
             "2",
             "3",
@@ -199,7 +201,7 @@
         "recognition": "TemplateMatch",
         "template": "大红瓶.png",
         "roi" : [513,235,172,92],
-        "next": "补体1",
+        "next": "补体2",
         "timeout": 3000,
         "on_error": "停止"
     },
@@ -210,19 +212,6 @@
         "next": "小红瓶补体1",
         "timeout": 3000,
         "on_error": "停止"
-    },
-    "补体1": {
-        "recognition": "OCR",
-        "expected": "5",
-        "roi" : [610,405,33,36],
-        "target" : [584,262,36,63],
-        "action": "Click",
-        "timeout": 500,
-        "inverse": true,
-        "pre_delay": 100,
-        "post_delay": 100,
-        "next": "补体2",
-        "on_error": "检测补体1(使用)"
     },
     "补体2": {
         "recognition": "OCR",
@@ -455,7 +444,7 @@
     },
     "zx一键扫荡": {
         "recognition": "OCR",
-        "expected": "一键",
+        "expected": "扫荡",
         "roi": [
             1132,
             615,

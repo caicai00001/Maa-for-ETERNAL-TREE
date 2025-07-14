@@ -3,12 +3,12 @@
   "ThemeIndex": 0,
   "EnableEdit": false,
   "AdbDevice": {
-    "Name": "MuMuPlayer12",
-    "AdbPath": "D:/Program Files/Netease/MuMu Player 12/shell/adb.exe",
-    "AdbSerial": "127.0.0.1:16384",
-    "ScreencapMethods": 18446744073709551559,
+    "Name": "LDPlayer",
+    "AdbPath": "D:/leidian/LDPlayer9/adb.exe",
+    "AdbSerial": "emulator-5554",
+    "ScreencapMethods": 64,
     "InputMethods": 18446744073709551607,
-    "Config": "{\"extras\":{\"mumu\":{\"enable\":true,\"index\":0,\"path\":\"D:/Program Files/Netease/MuMu Player 12\"}}}"
+    "Config": "{\"extras\":{\"ld\":{\"enable\":true,\"index\":0,\"path\":\"D:/leidian/LDPlayer9\",\"pid\":21824}}}"
   },
   "TaskItems": [
     {
@@ -47,6 +47,18 @@
       "option": [
         {
           "name": "扫荡关卡",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "name": "自动主线扫荡(确保剩余足够的体力药)",
+      "entry": "主线扫荡开始",
+      "check": false,
+      "repeatable": false,
+      "option": [
+        {
+          "name": "扫荡关卡",
           "index": 1
         }
       ]
@@ -72,7 +84,7 @@
     {
       "name": "扫荡一次素材关卡",
       "entry": "开始扫荡一次素材关卡",
-      "check": false,
+      "check": true,
       "repeatable": false,
       "pipeline_override": {
         "等待进入": {
@@ -90,7 +102,7 @@
     {
       "name": "行会签到及捐赠",
       "entry": "开始行会签到及捐赠",
-      "check": false,
+      "check": true,
       "repeatable": false,
       "pipeline_override": {
         "等待进入": {
@@ -108,7 +120,7 @@
     {
       "name": "自动助战任务(+领取每日奖励)",
       "entry": "助战任务开始",
-      "check": false,
+      "check": true,
       "repeatable": false,
       "pipeline_override": {
         "输入连战次数": {
@@ -253,5 +265,6 @@
   "Resource": "官服",
   "EnableCheckVersion": false,
   "DownloadSourceIndex": 0,
-  "ResourceIndex": 1
+  "ResourceIndex": 0,
+  "EnableGPU": true
 }
