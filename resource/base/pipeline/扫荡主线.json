@@ -90,7 +90,7 @@
     },
     "zx点击难度": {
         "recognition": "OCR",
-        "expected": "困难",
+        "expected": "极难",
         "roi": [
             20,
             630,
@@ -179,6 +179,8 @@
         "recognition": "TemplateMatch",
         "template": "小红瓶.png",
         "roi" : [600,235,151,92],
+        "target" : [656,263,31,62],
+        "action": "Click",
         "next": "小红瓶补体1",
         "timeout": 3000,
         "on_error": "停止"

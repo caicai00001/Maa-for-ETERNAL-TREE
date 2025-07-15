@@ -47958,3 +47958,6 @@ Starting: Intent { cmp=com.orlesh.yjzs/com.orlesh.sdkdemo.PrivateActivity }
 [2025-07-14 14:42:29.798][DBG][Px21988][Tx51820][Logger] Flush log 
 [2025-07-14 14:42:29.798][DBG][Px21988][Tx51820][Logger] ----------------------------- 
 [2025-07-14 14:42:29.799][TRC][Px21988][Tx51820][Tasker.cpp][L228][MaaNS::Tasker::run_task] | leave, 1ms 
+[2025-07-15 08:14:33.591][DBG][Px21988][Tx6344][Logger] ----------------------------- 
+[2025-07-15 08:14:33.591][DBG][Px21988][Tx6344][Logger] Close log 
+[2025-07-15 08:14:33.591][DBG][Px21988][Tx6344][Logger] ----------------------------- 
