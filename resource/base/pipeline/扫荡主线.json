@@ -90,7 +90,7 @@
     },
     "zx点击难度": {
         "recognition": "OCR",
-        "expected": "极难",
+        "expected": "困难",
         "roi": [
             20,
             630,

@@ -67,7 +67,8 @@
             "取消",
             "点击空白处关闭",
             "领取物资",
-            "关闭页面1"
+            "关闭页面1",
+            "关闭周历"
         ]
     },
     "重试": {
@@ -132,6 +133,14 @@
         "action": "Click",
         "post_delay": 800
     },
+    "关闭周历":{
+        "recognition": "TemplateMatch",
+        "template" : "关闭周历.png",
+        "roi" : [1108,18,75,66],
+        "timeout": 3000,
+        "action": "Click",
+        "post_delay": 800
+    },
     "停止": {
         "action": "DoNothing"
     },
@@ -170,7 +179,8 @@
             "取消",
             "点击空白处关闭",
             "领取物资",
-            "关闭页面1"
+            "关闭页面1",
+            "关闭周历"
         ],
         "on_error": "stopapp"
     },

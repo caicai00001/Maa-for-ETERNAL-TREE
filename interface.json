@@ -51,6 +51,32 @@
       "repeatable": false
     },
     {
+      "name": "每日物资",
+      "entry": "开始每日物资",
+      "pipeline_override": {
+        "等待进入": {
+          "next": "主页检测"
+        },
+        "主页检测": {
+          "next": "每日物资领取-3.10版本"
+        }
+      },
+      "repeatable": false
+    },
+    {
+      "name": "探索活动奖励领取",
+      "entry": "开始探索活动",
+      "pipeline_override": {
+        "等待进入": {
+          "next": "主页检测"
+        },
+        "主页检测": {
+          "next": "探索活动领取-3.10版本"
+        }
+      },
+      "repeatable": false
+    },
+    {
       "name": "领取邮件",
       "entry": "开始领取邮件",
       "pipeline_override": {
@@ -2854,7 +2880,7 @@
       ]
     }
   },
-  "version": "v1.5.6",
+  "version": "v1.6.1",
   "name": "Maa-for-ETERNAL-TREE",
   "url": "https://github.com/caicai00001/Maa-for-ETERNAL-TREE"
 }

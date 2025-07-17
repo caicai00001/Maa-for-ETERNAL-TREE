@@ -1,0 +1,117 @@
+{
+    "每日物资领取-3.10版本": {
+        "next": [
+          "领取物质",
+          "返回主页检测"
+        ],
+        "timeout": 3000,
+        "on_error": "stopapp"
+    },
+    "领取物质": {
+        "recognition": "TemplateMatch",
+        "template" : "活动.png",
+        "next": [
+          "点击每日物资"
+        ],
+        "interrupt":"wz向上滑动",
+        "roi" : [833,613,84,79],
+        "action": "Click",
+        "pre_delay": 300,
+        "post_delay": 300,
+        "timeout": 3000,
+        "on_error": "stopapp"
+    },
+    "wz向上滑动": {
+        "recognition": "OCR",
+        "expected" : "玩法推荐",
+        "roi" : [58,42,240,638],
+        "action": "Swipe",
+        "begin": [
+          161,
+          650,
+          1,
+          1
+        ],
+        "end": [
+          161,
+          150,
+          1,
+          1
+        ],
+        "duration": 1000
+    },
+    "点击每日物资":{
+      "recognition": "OCR",
+      "expected" : "每日物资",
+      "roi" : [107,342,187,198],
+      "next": "12点每日物资已领取",
+      "action": "Click",
+      "pre_delay": 150,
+      "post_delay": 150,
+      "timeout": 3000,
+      "on_error": "stopapp"
+    },
+    "12点每日物资待领取":{
+      "recognition": "TemplateMatch",
+      "template" : "每日待领取.png",
+      "roi" : [518,527,164,85],
+      "next": "18点每日物资待领取",
+      "interrupt": "wz点击空白处",
+      "action": "Click",
+      "pre_delay": 150,
+      "post_delay": 150,
+      "timeout": 3000,
+      "on_error": "stopapp"
+    },
+    "18点每日物资待领取": {
+      "recognition": "TemplateMatch",
+      "template" : "每日待领取.png",
+      "roi" : [907,532,160,67],
+      "next": "18点每日物资待领取",
+      "interrupt": [
+        "wz点击空白处",
+        "每日领取关闭"
+      ],
+      "action": "Click",
+      "pre_delay": 150,
+      "post_delay": 150,
+      "timeout": 3000,
+      "on_error": "stopapp"
+    },
+    "wz点击空白处": {
+      "recognition": "OCR",
+      "expected": "空白",
+      "action": "Click",
+      "roi" : [550,603,164,71]
+    },
+    "12点每日物资已领取": {
+      "recognition": "TemplateMatch",
+      "template" : "每日已领取.png",
+      "roi" : [518,527,164,85],
+      "next":"18点每日物资已领取",
+      "pre_delay": 10,
+      "post_delay": 10,
+      "timeout": 800,
+      "on_error": "stopapp"
+    },
+    "18点每日物资已领取": {
+      "recognition": "TemplateMatch",
+      "template" : "每日已领取.png",
+      "roi" : [907,532,160,67],
+      "next": "每日领取关闭",
+      "pre_delay": 10,
+      "post_delay": 10,
+      "timeout": 800,
+      "on_error": "stopapp"
+    },
+    "每日领取关闭": {
+      "recognition": "TemplateMatch",
+      "template": "X.png",
+      "roi" : [1225,21,45,40],
+      "action": "Click",
+      "pre_delay": 50,
+      "post_delay": 50,
+      "timeout": 300,
+      "on_error": "停止"
+    }
+}

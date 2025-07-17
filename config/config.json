@@ -3,12 +3,15 @@
   "ThemeIndex": 0,
   "EnableEdit": false,
   "AdbDevice": {
-    "Name": "LDPlayer",
-    "AdbPath": "D:/leidian/LDPlayer9/adb.exe",
-    "AdbSerial": "emulator-5554",
+    "InfoHandle": {
+      "value": 3120360422656
+    },
+    "Name": "MuMuPlayer12",
+    "AdbPath": "D:/Program Files/Netease/MuMu Player 12/shell/adb.exe",
+    "AdbSerial": "127.0.0.1:16384",
     "ScreencapMethods": 64,
     "InputMethods": 18446744073709551607,
-    "Config": "{\"extras\":{\"ld\":{\"enable\":true,\"index\":0,\"path\":\"D:/leidian/LDPlayer9\",\"pid\":21824}}}"
+    "Config": "{\"extras\":{\"mumu\":{\"enable\":true,\"index\":0,\"path\":\"D:/Program Files/Netease/MuMu Player 12\"}}}"
   },
   "TaskItems": [
     {
@@ -84,7 +87,7 @@
     {
       "name": "扫荡一次素材关卡",
       "entry": "开始扫荡一次素材关卡",
-      "check": true,
+      "check": false,
       "repeatable": false,
       "pipeline_override": {
         "等待进入": {
@@ -102,7 +105,7 @@
     {
       "name": "行会签到及捐赠",
       "entry": "开始行会签到及捐赠",
-      "check": true,
+      "check": false,
       "repeatable": false,
       "pipeline_override": {
         "等待进入": {
@@ -120,7 +123,7 @@
     {
       "name": "自动助战任务(+领取每日奖励)",
       "entry": "助战任务开始",
-      "check": true,
+      "check": false,
       "repeatable": false,
       "pipeline_override": {
         "输入连战次数": {
@@ -152,6 +155,42 @@
         "点击自动战斗": {
           "next": [
             "点击启用建房"
+          ]
+        }
+      }
+    },
+    {
+      "name": "每日物资",
+      "entry": "每日物资领取-3.10版本",
+      "check": true,
+      "repeatable": false,
+      "pipeline_override": {
+        "等待进入": {
+          "next": [
+            "主页检测"
+          ]
+        },
+        "主页检测": {
+          "next": [
+            "每日物资领取-3.10版本"
+          ]
+        }
+      }
+    },
+    {
+      "name": "探索活动",
+      "entry": "探索活动领取-3.10版本",
+      "check": true,
+      "repeatable": false,
+      "pipeline_override": {
+        "等待进入": {
+          "next": [
+            "主页检测"
+          ]
+        },
+        "主页检测": {
+          "next": [
+            "探索活动领取-3.10版本"
           ]
         }
       }

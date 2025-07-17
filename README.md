@@ -19,6 +19,10 @@ MET由 [MaaFramework](https://github.com/MaaXYZ/MaaFramework) 驱动
 
  MET功能:
 
+ - 支持自动领取`探索活动`奖励
+
+ - 支持自动领取`每日物资`奖励
+
  - 支持自动重复刷`多人战斗`关卡
 
  - 支持自动重复刷`神眠之地`
@@ -51,6 +55,10 @@ MET由 [MaaFramework](https://github.com/MaaXYZ/MaaFramework) 驱动
 >**请下载`Maa-for-ETERNAL-TREE`最新版本.zip**
 
 # 更新日志
+
+**7月17日更新v1.6.1**
+新增`每日物资`自动领取
+新增`探索活动` 探索者之书和器灵讨伐书自动领取
 
 **7月15日更新v1.5.6**
 修复主线补药异常问题：修正了 v1.5.5 版本中主线补药准确率优化导致的逻辑异常，

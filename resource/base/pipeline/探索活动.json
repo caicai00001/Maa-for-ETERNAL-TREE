@@ -1,0 +1,244 @@
+{
+  "探索活动领取-3.10版本": {
+    "next": [
+      "探索活动领取",
+      "返回主页检测"
+    ],
+    "timeout": 3000,
+    "on_error": "stopapp"
+  },
+  "探索活动领取": {
+    "recognition": "TemplateMatch",
+    "template": "主页出击.png",
+    "roi": [
+      1031,
+      325,
+      119,
+      54
+    ],
+    "pre_delay": 100,
+    "post_delay": 100,
+    "next": [
+      "点击探索活动",
+      "停止"
+    ],
+    "timeout": 3000,
+    "on_error": "stopapp"
+  },
+  "点击探索活动": {
+    "recognition": "TemplateMatch",
+    "template" : "探索活动.png",
+    "roi" : [681,98,576,65],
+    "action": "Click",
+    "next": "点击探求者之书",
+    "pre_delay": 350,
+    "post_delay": 350,
+    "timeout": 5000,
+    "on_error": "stopapp"
+  },
+  "点击探求者之书": {
+    "recognition": "OCR",
+    "expected": "探求",
+    "roi" : [46,188,97,47],
+    "action": "Click",
+    "next": "探求者之书_任务_点击",
+    "pre_delay": 150,
+    "post_delay": 150,
+    "post_wait_freezes": 300,
+    "timeout": 8000,
+    "on_error": "stopapp"
+  },
+  "探求者之书_任务_点击": {
+    "recognition": "OCR",
+    "expected" : "任务",
+    "roi" : [1115,663,123,57],
+    "action": "Click",
+    "next": [
+      "一键领取_探索者之书_日常任务奖励"
+    ],
+    "pre_delay": 150,
+    "post_delay": 150,
+    "timeout": 800,
+    "on_error": "探求者之书_任务_本周_切换"
+  },
+  "一键领取_探索者之书_日常任务奖励": {
+    "recognition": "OCR",
+    "expected" : "领取",
+    "roi" : [982,203,128,67],
+    "action": "Click",
+    "target": [1150,38,89,33],
+    "next":[
+      "一键领取_探索者之书_日常任务奖励",
+      "探求者之书_任务_本周_切换"
+    ],
+    "interrupt": [
+      "ts点击空白处"
+    ],
+    "pre_delay": 150,
+    "post_delay": 150,
+    "timeout": 800,
+    "on_error": "stopapp"
+  },
+  "探求者之书_任务_本周_切换": {
+    "recognition": "OCR",
+    "expected" : "本周任务",
+    "roi" : [1004,126,122,52],
+    "action": "Click",
+    "next": "一键领取_探索者之书_本周任务奖励",
+    "pre_delay": 100,
+    "post_delay": 100,
+    "timeout": 800,
+    "on_error": "探求者之书_奖励"
+  },
+  "一键领取_探索者之书_本周任务奖励": {
+    "recognition": "OCR",
+    "expected" : "领取",
+    "roi" : [982,203,128,67],
+    "action": "Click",
+    "target": [1150,38,89,33],
+    "next": [
+      "一键领取_探索者之书_本周任务奖励",
+    "探求者之书_奖励"],
+    "interrupt": [
+      "ts点击空白处"
+    ],
+    "pre_delay": 150,
+    "post_delay": 150,
+    "timeout": 3000,
+    "on_error": "stopapp"
+  },
+  "探求者之书_奖励": {
+    "recognition": "OCR",
+    "expected" : "奖励",
+    "roi" : [919,667,111,53],
+    "action": "Click",
+    "next": "探求者之书_奖励_一键领取",
+    "pre_delay": 100,
+    "post_delay": 100,
+    "timeout": 800,
+    "on_error": "探求者之书_奖励_器灵讨伐书"
+  },
+  "探求者之书_奖励_一键领取": {
+    "recognition": "OCR",
+    "expected" : "领取",
+    "roi" : [1108,27,159,58],
+    "action": "Click",
+    "post_wait_freezes": 300,
+    "next": [
+      "探求者之书_奖励_一键领取",
+      "探求者之书_奖励_器灵讨伐书"
+    ],
+    "interrupt": [
+      "ts点击空白处"
+    ],
+    "pre_delay": 150,
+    "post_delay": 150,
+    "timeout": 2000,
+    "on_error": "stopapp"
+  },
+  "探求者之书_奖励_器灵讨伐书": {
+    "recognition": "OCR",
+    "expected" : "器灵讨伐书",
+    "roi" : [43,285,124,49],
+    "next": "器灵讨伐书_任务_点击",
+    "action": "Click",
+    "pre_delay": 150,
+    "post_delay": 150,
+    "timeout": 800,
+    "on_error": "停止"
+  },
+  "器灵讨伐书_任务_点击": {
+    "recognition": "OCR",
+    "expected" : "任务",
+    "roi" : [1115,663,123,57],
+    "action": "Click",
+    "next": [
+      "一键领取_器灵讨伐书_日常任务奖励"
+    ],
+    "pre_delay": 150,
+    "post_delay": 150,
+    "timeout": 800,
+    "on_error": "器灵讨伐书_任务_本周_切换"
+  },
+  "一键领取_器灵讨伐书_日常任务奖励": {
+    "recognition": "OCR",
+    "expected" : "领取",
+    "roi" : [982,203,128,67],
+    "action": "Click",
+    "target": [1150,38,89,33],
+    "next":[
+      "一键领取_器灵讨伐书_日常任务奖励",
+      "器灵讨伐书_任务_本周_切换"
+    ],
+    "interrupt": [
+      "ts点击空白处"
+    ],
+    "pre_delay": 150,
+    "post_delay": 150,
+    "timeout": 800,
+    "on_error": "stopapp"
+  },
+  "器灵讨伐书_任务_本周_切换": {
+    "recognition": "OCR",
+    "expected" : "本周任务",
+    "roi" : [1004,126,122,52],
+    "action": "Click",
+    "next": "一键领取_器灵讨伐书_本周任务奖励",
+    "pre_delay": 100,
+    "post_delay": 100,
+    "timeout": 800,
+    "on_error": "器灵讨伐书_奖励"
+  },
+  "一键领取_器灵讨伐书_本周任务奖励": {
+    "recognition": "OCR",
+    "expected" : "领取",
+    "roi" : [982,203,128,67],
+    "action": "Click",
+    "target": [1150,38,89,33],
+    "next": [
+      "一键领取_器灵讨伐书_本周任务奖励",
+      "器灵讨伐书_奖励"],
+    "interrupt": [
+      "ts点击空白处"
+    ],
+    "pre_delay": 150,
+    "post_delay": 150,
+    "timeout": 3000,
+    "on_error": "stopapp"
+  },
+  "器灵讨伐书_奖励": {
+    "recognition": "OCR",
+    "expected" : "奖励",
+    "roi" : [919,667,111,53],
+    "action": "Click",
+    "next": "器灵讨伐书_奖励_一键领取",
+    "pre_delay": 100,
+    "post_delay": 100,
+    "timeout": 800,
+    "on_error": "停止"
+  },
+  "器灵讨伐书_奖励_一键领取": {
+    "recognition": "OCR",
+    "expected" : "领取",
+    "roi" : [1108,27,159,58],
+    "action": "Click",
+    "post_wait_freezes": 300,
+    "next": [
+      "器灵讨伐书_奖励_一键领取"
+    ],
+    "interrupt": [
+      "ts点击空白处"
+    ],
+    "pre_delay": 150,
+    "post_delay": 150,
+    "timeout": 2000,
+    "on_error": "停止"
+  },
+  "ts点击空白处": {
+    "recognition": "OCR",
+    "expected": "空白",
+    "action": "Click",
+    "roi" : [550,603,164,71]
+  }
+
+}
