@@ -19,6 +19,8 @@ MET由 [MaaFramework](https://github.com/MaaXYZ/MaaFramework) 驱动
 
  MET功能:
 
+ - 支持自动领取`神狱桃园乡`奖励
+
  - 支持自动领取`探索活动`奖励
 
  - 支持自动领取`每日物资`奖励
@@ -55,6 +57,10 @@ MET由 [MaaFramework](https://github.com/MaaXYZ/MaaFramework) 驱动
 >**请下载`Maa-for-ETERNAL-TREE`最新版本.zip**
 
 # 更新日志
+
+**7月18号更新v1.7.0**
+新增`神狱桃园乡`支持自动重复刷
+修复`每日物资`无法领取的问题
 
 **7月17日更新v1.6.1**
 新增`每日物资`自动领取

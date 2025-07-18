@@ -159,6 +159,25 @@
       "repeat_count": 1
     },
     {
+      "name": "开始自动桃园乡",
+      "entry": "startAutoTaoyuanTownship",
+      "option": [
+        "神狱桃源乡属性",
+        "神狱之主等级"
+      ],
+      "pipeline_override": {
+        "等待进入": {
+          "next": "主页检测"
+        },
+        "主页检测": {
+          "next": "startAutoTaoyuanTownship"
+        }
+      },
+      "doc": "[color:blue][size:20]扫荡[/size][/color][color:blue][size:20][u]桃园乡[/u][/size][/color][color:blue][size:20]时sap不足会自动补充sap(请确保金币足够)[/size][/color]",
+      "repeatable": true,
+      "repeat_count": 1
+    },
+    {
       "name": "自动神眠",
       "entry": "开始自动神眠",
       "option": [
@@ -2878,9 +2897,110 @@
           }
         }
       ]
+    },
+    "神狱桃源乡属性": {
+      "cases": [
+        {
+          "name": "火",
+          "pipeline_override": {
+            "selectTaoyuanAttribute": {
+              "expected": "朱雀"
+            }
+          }
+        },
+        {
+          "name": "水",
+          "pipeline_override": {
+            "selectTaoyuanAttribute": {
+              "expected": "玄武"
+            }
+          }
+        },
+        {
+          "name": "土",
+          "pipeline_override": {
+            "selectTaoyuanAttribute": {
+              "expected": "白虎"
+            }
+          }
+        },
+        {
+          "name": "风",
+          "pipeline_override": {
+            "selectTaoyuanAttribute": {
+              "expected": "青龙"
+            }
+          }
+        },
+        {
+          "name": "光",
+          "pipeline_override": {
+            "selectTaoyuanAttribute": {
+              "expected": "勾陈"
+            }
+          }
+        },
+        {
+          "name": "暗",
+          "pipeline_override": {
+            "selectTaoyuanAttribute": {
+              "expected": "腾蛇"
+            }
+          }
+        }
+      ]
+    },
+    "神狱之主等级": {
+      "cases": [
+        {
+          "name": "100级",
+          "pipeline_override": {
+            "theMasterOfTaoyuan_Difficulty": {
+              "target" : [794,123,46,65],
+              "enabled": true
+            }
+          }
+        },
+        {
+          "name": "120级",
+          "pipeline_override": {
+            "theMasterOfTaoyuan_Difficulty": {
+              "target" : [801,226,34,68],
+              "enabled": true
+            }
+          }
+        },
+        {
+          "name": "150级",
+          "pipeline_override": {
+            "theMasterOfTaoyuan_Difficulty": {
+              "target" : [801,339,29,62],
+              "enabled": true
+            }
+          }
+        },
+        {
+          "name": "175级",
+          "pipeline_override": {
+            "theMasterOfTaoyuan_Difficulty": {
+              "target" : [800,448,35,66],
+              "enabled": true
+            }
+          }
+        },
+        {
+          "name": "200级",
+          "pipeline_override": {
+            "theMasterOfTaoyuan_Difficulty": {
+              "target" : [800,559,38,60],
+              "enabled": true
+            }
+          }
+        }
+      ]
     }
   },
-  "version": "v1.6.1",
+  "version": "v1.7.0",
   "name": "Maa-for-ETERNAL-TREE",
   "url": "https://github.com/caicai00001/Maa-for-ETERNAL-TREE"
 }

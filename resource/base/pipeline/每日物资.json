@@ -22,9 +22,6 @@
         "on_error": "stopapp"
     },
     "wz向上滑动": {
-        "recognition": "OCR",
-        "expected" : "玩法推荐",
-        "roi" : [58,42,240,638],
         "action": "Swipe",
         "begin": [
           161,
@@ -44,7 +41,12 @@
       "recognition": "OCR",
       "expected" : "每日物资",
       "roi" : [107,342,187,198],
-      "next": "12点每日物资已领取",
+      "next": [
+        "12点每日物资待领取",
+        "18点每日物资待领取",
+        "每日领取关闭"
+      ],
+      "threshold": 0.95,
       "action": "Click",
       "pre_delay": 150,
       "post_delay": 150,
@@ -55,7 +57,12 @@
       "recognition": "TemplateMatch",
       "template" : "每日待领取.png",
       "roi" : [518,527,164,85],
-      "next": "18点每日物资待领取",
+      "next": [
+        "12点每日物资待领取",
+        "18点每日物资待领取",
+        "每日领取关闭"
+      ],
+      "threshold": 0.95,
       "interrupt": "wz点击空白处",
       "action": "Click",
       "pre_delay": 150,
@@ -66,12 +73,13 @@
     "18点每日物资待领取": {
       "recognition": "TemplateMatch",
       "template" : "每日待领取.png",
+      "threshold": 0.95,
       "roi" : [907,532,160,67],
-      "next": "18点每日物资待领取",
-      "interrupt": [
-        "wz点击空白处",
+      "next": [
+        "18点每日物资待领取",
         "每日领取关闭"
       ],
+      "interrupt": "wz点击空白处",
       "action": "Click",
       "pre_delay": 150,
       "post_delay": 150,
@@ -83,26 +91,6 @@
       "expected": "空白",
       "action": "Click",
       "roi" : [550,603,164,71]
-    },
-    "12点每日物资已领取": {
-      "recognition": "TemplateMatch",
-      "template" : "每日已领取.png",
-      "roi" : [518,527,164,85],
-      "next":"18点每日物资已领取",
-      "pre_delay": 10,
-      "post_delay": 10,
-      "timeout": 800,
-      "on_error": "stopapp"
-    },
-    "18点每日物资已领取": {
-      "recognition": "TemplateMatch",
-      "template" : "每日已领取.png",
-      "roi" : [907,532,160,67],
-      "next": "每日领取关闭",
-      "pre_delay": 10,
-      "post_delay": 10,
-      "timeout": 800,
-      "on_error": "stopapp"
     },
     "每日领取关闭": {
       "recognition": "TemplateMatch",

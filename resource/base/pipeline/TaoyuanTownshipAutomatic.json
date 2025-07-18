@@ -1,0 +1,426 @@
+{
+  "startAutoTaoyuanTownship": {
+    "next": [
+      "detectionHome",
+      "返回主页检测"
+    ],
+    "interrupt": [
+      "退出"
+    ],
+    "timeout": 3000,
+    "on_error": "stopapp"
+  },
+  "detectionHome": {
+    "recognition": "TemplateMatch",
+    "template": "主页出击.png",
+    "roi": [
+      1031,
+      325,
+      119,
+      54
+    ],
+    "action": "Click",
+    "next": [
+      "clickTaoyuanTownship",
+      "clickChallenge"
+    ],
+    "timeout": 3000,
+    "on_error": "stopapp"
+  },
+  "clickTaoyuanTownship": {
+    "recognition": "TemplateMatch",
+    "template": "桃源乡.png",
+    "roi" : [23,438,1240,180],
+    "action": "Click",
+    "next": [
+      "selectTaoyuanAttribute"
+    ],
+    "pre_delay": 600,
+    "post_delay": 2000,
+    "timeout": 3000,
+    "on_error": "stopapp"
+  },
+  "selectTaoyuanAttribute": {
+    "recognition": "OCR",
+    "expected": "朱雀",
+    "roi" : [283,480,972,151],
+    "action": "Click",
+    "next": [
+      "lostItem"
+    ],
+    "pre_delay": 350,
+    "post_delay": 350,
+    "timeout": 3000,
+    "on_error": "stopapp"
+  },
+  "lostItem": {
+    "recognition": "OCR",
+    "expected" : "迷失之物",
+    "roi" : [65,239,478,223],
+    "action": "Click",
+    "next": "lostItem_1",
+    "pre_delay": 350,
+    "post_delay": 350,
+    "timeout": 3000,
+    "on_error": "stopapp"
+  },
+  "lostItem_1": {
+    "recognition": "OCR",
+    "expected" : "IV",
+    "roi" : [754,431,109,98],
+    "action": "Click",
+    "next": "mopping_lostItem",
+    "pre_delay": 350,
+    "post_delay": 350,
+    "timeout": 3000,
+    "on_error": "stopapp"
+  },
+  "mopping_lostItem": {
+    "recognition": "OCR",
+    "expected": "扫荡",
+    "roi": [
+      866,
+      592,
+      171,
+      114
+    ],
+    "action": "Click",
+    "pre_delay": 350,
+    "post_delay": 350,
+    "next": [
+      "moppingLostItemDetermine",
+      "insufficientMaterialsRequired_LostItem",
+      "didnTClearTheLevel"
+    ],
+    "timeout": 3000,
+    "on_error": "stopapp"
+  },
+  "moppingLostItemDetermine": {
+    "recognition": "OCR",
+    "expected": "确定",
+    "roi": [
+      535,
+      423,
+      207,
+      109
+    ],
+    "action": "Click",
+    "pre_delay": 350,
+    "post_delay": 350,
+    "next": "moppingLostItem_waitForCompletion",
+    "timeout": 80000,
+    "on_error": "stopapp"
+  },
+  "moppingLostItem_waitForCompletion": {
+    "recognition": "OCR",
+    "expected": "确认",
+    "roi": [
+      791,
+      612,
+      224,
+      107
+    ],
+    "action": "Click",
+    "pre_delay": 400,
+    "post_delay": 1000,
+    "next": [
+      "moppingLostItem_waitForCompletion",
+      "LostThings"],
+    "interrupt": "clickBlank",
+    "timeout": 3000,
+    "on_error": "stopapp"
+  },
+  "LostThings": {
+    "recognition": "OCR",
+    "expected": "遗落",
+    "roi" : [258,225,960,222],
+    "action": "Click",
+    "next": "LostThings_1",
+    "pre_delay": 400,
+    "post_delay": 400,
+    "timeout": 3000,
+    "on_error": "stopapp"
+  },
+  "LostThings_1": {
+    "recognition": "OCR",
+    "expected": "扫荡",
+    "roi": [
+      866,
+      592,
+      171,
+      114
+    ],
+    "action": "Click",
+    "pre_delay": 400,
+    "post_delay": 400,
+    "next": [
+      "moppingLostThingsDetermine",
+      "insufficientMaterialsRequired_LostThings",
+      "didnTClearTheLevel"
+    ],
+    "timeout": 3000,
+    "on_error": "stopapp"
+  },
+  "moppingLostThingsDetermine": {
+    "recognition": "OCR",
+    "expected": "确定",
+    "roi": [
+      535,
+      423,
+      207,
+      109
+    ],
+    "action": "Click",
+    "pre_delay": 400,
+    "post_delay": 400,
+    "next": "moppingLostThings_waitForCompletion",
+    "timeout": 80000,
+    "on_error": "stopapp"
+  },
+  "moppingLostThings_waitForCompletion": {
+    "recognition": "OCR",
+    "expected": "确认",
+    "roi": [
+      791,
+      612,
+      224,
+      107
+    ],
+    "action": "Click",
+    "pre_delay": 400,
+    "post_delay": 1000,
+    "next": [
+      "moppingLostThings_waitForCompletion",
+      "theMasterOfTaoyuan"],
+    "interrupt": "clickBlank",
+    "timeout": 3000,
+    "on_error": "stopapp"
+  },
+  "theMasterOfTaoyuan": {
+    "recognition": "OCR",
+    "expected": "神狱",
+    "roi" : [258,225,960,222],
+    "action": "Click",
+    "next": "theMasterOfTaoyuan_Difficulty",
+    "pre_delay": 400,
+    "post_delay": 400,
+    "timeout": 3000,
+    "on_error": "stopapp"
+  },
+  "theMasterOfTaoyuan_Difficulty": {
+    "target" : [800,559,38,60],
+    "action": "Click",
+    "pre_delay": 400,
+    "post_delay": 400,
+    "next": "theMasterOfTaoyuan_1",
+    "timeout": 3000,
+    "on_error": "stopapp",
+    "enabled": true
+  },
+  "theMasterOfTaoyuan_1": {
+    "recognition": "OCR",
+    "expected": "扫荡",
+    "roi": [
+      866,
+      592,
+      171,
+      114
+    ],
+    "action": "Click",
+    "pre_delay": 400,
+    "post_delay": 400,
+    "next": [
+      "moppingTheMasterOfTaoyuanDetermine",
+      "insufficientMaterialsRequired_TheMasterOfTaoyuan",
+      "didnTClearTheLevel"
+    ],
+    "timeout": 3000,
+    "on_error": "stopapp"
+  },
+  "moppingTheMasterOfTaoyuanDetermine": {
+    "recognition": "OCR",
+    "expected": "确定",
+    "roi": [
+      535,
+      423,
+      207,
+      109
+    ],
+    "action": "Click",
+    "pre_delay": 400,
+    "post_delay": 400,
+    "next": "moppingTheMasterOfTaoyuan_waitForCompletion",
+    "timeout": 80000,
+    "on_error": "stopapp"
+  },
+  "moppingTheMasterOfTaoyuan_waitForCompletion": {
+    "recognition": "OCR",
+    "expected": "确认",
+    "roi": [
+      791,
+      612,
+      224,
+      107
+    ],
+    "action": "Click",
+    "pre_delay": 400,
+    "post_delay": 1000,
+    "next": "停止",
+    "interrupt": "clickBlank",
+    "timeout": 3000,
+    "on_error": "stopapp"
+  },
+  "insufficientMaterialsRequired_TheMasterOfTaoyuan": {
+    "recognition": "OCR",
+    "expected": "所需材料",
+    "roi": [
+      508,
+      319,
+      259,
+      76
+    ],
+    "next": "LostThings",
+    "timeout": 3000,
+    "on_error": "stopapp"
+  },
+  "insufficientMaterialsRequired_LostThings": {
+    "recognition": "OCR",
+    "expected": "所需材料",
+    "roi": [
+      508,
+      319,
+      259,
+      76
+    ],
+    "next": "lostItem",
+    "timeout": 3000,
+    "on_error": "stopapp"
+  },
+  "didnTClearTheLevel": {
+    "recognition": "OCR",
+    "expected": "需要通过",
+    "roi" : [473,321,333,74],
+    "next": "停止",
+    "timeout": 1000,
+    "on_error": "stopapp"
+  },
+  "insufficientMaterialsRequired_LostItem": {
+    "recognition": "OCR",
+    "expected": "所需材料",
+    "roi": [
+      508,
+      319,
+      259,
+      76
+    ],
+    "next": "supplementary_sap_Plus",
+    "timeout": 3000,
+    "on_error": "stopapp"
+  },
+  "supplementary_sap_Plus": {
+    "recognition": "TemplateMatch",
+    "template": "补体力按钮.png",
+    "roi": [
+      722,
+      3,
+      191,
+      86
+    ],
+    "action": "Click",
+    "next": "supplementary_EnterInterface",
+    "timeout": 3000,
+    "on_error": "stopapp"
+  },
+  "supplementary_EnterInterface": {
+    "recognition": "OCR",
+    "expected": "回复",
+    "roi": [
+      513,
+      104,
+      240,
+      119
+    ],
+    "pre_delay": 20,
+    "post_delay": 20,
+    "next": "supplementary_60",
+    "timeout": 3000,
+    "on_error": "stopapp"
+  },
+  "supplementary_60": {
+    "recognition": "OCR",
+    "expected": "60",
+    "inverse": true,
+    "roi": [
+      579,
+      295,
+      115,
+      71
+    ],
+    "target": [
+      747,
+      316,
+      41,
+      20
+    ],
+    "pre_delay": 100,
+    "post_delay": 100,
+    "action": "Click",
+    "next": [
+      "supplementary_60",
+      "supplementary_sap_Exchange"
+    ]
+  },
+  "supplementary_sap_Exchange": {
+    "recognition": "OCR",
+    "expected": "兑换",
+    "roi": [
+      553,
+      416,
+      183,
+      85
+    ],
+    "action": "Click",
+    "next": [
+      "mopping_lostItem"
+    ]
+  },
+  "clickChallenge": {
+    "recognition": "OCR",
+    "expected": "挑战",
+    "roi": [
+      434,
+      84,
+      146,
+      60
+    ],
+    "action": "Click",
+    "post_delay": 400,
+    "next": "clickTaoyuanTownship",
+    "interrupt": "taoyuanSwipeRight",
+    "timeout": 3000,
+    "on_error": "stopapp"
+  },
+  "clickBlank": {
+    "action": "Click",
+    "target" : [584,564,46,49]
+  },
+  "taoyuanSwipeRight": {
+    "recognition": "OCR",
+    "expected": "挑战",
+    "action": "Swipe",
+    "begin": [
+      300,
+      206,
+      1,
+      1
+    ],
+    "end": [
+      367,
+      206,
+      1,
+      1
+    ],
+    "post_delay": 700,
+    "duration": 500
+  }
+}

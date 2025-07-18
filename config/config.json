@@ -3,9 +3,6 @@
   "ThemeIndex": 0,
   "EnableEdit": false,
   "AdbDevice": {
-    "InfoHandle": {
-      "value": 3120360422656
-    },
     "Name": "MuMuPlayer12",
     "AdbPath": "D:/Program Files/Netease/MuMu Player 12/shell/adb.exe",
     "AdbSerial": "127.0.0.1:16384",
@@ -162,7 +159,7 @@
     {
       "name": "每日物资",
       "entry": "每日物资领取-3.10版本",
-      "check": true,
+      "check": false,
       "repeatable": false,
       "pipeline_override": {
         "等待进入": {
@@ -180,7 +177,7 @@
     {
       "name": "探索活动",
       "entry": "探索活动领取-3.10版本",
-      "check": true,
+      "check": false,
       "repeatable": false,
       "pipeline_override": {
         "等待进入": {
@@ -222,6 +219,38 @@
           "index": 4
         }
       ]
+    },
+    {
+      "name": "开始自动桃园乡",
+      "entry": "startAutoTaoyuanTownship",
+      "doc": [
+        "[color:blue][size:20]扫荡[/size][/color][color:blue][size:20][u]桃园乡[/u][/size][/color][color:blue][size:20]时sap不足会自动补充sap(请确保金币足够)[/size][/color]"
+      ],
+      "check": true,
+      "repeatable": true,
+      "repeat_count": 1,
+      "option": [
+        {
+          "name": "神狱桃源乡属性",
+          "index": 1
+        },
+        {
+          "name": "神狱之主等级",
+          "index": 3
+        }
+      ],
+      "pipeline_override": {
+        "等待进入": {
+          "next": [
+            "主页检测"
+          ]
+        },
+        "主页检测": {
+          "next": [
+            "startAutoTaoyuanTownship"
+          ]
+        }
+      }
     },
     {
       "name": "自动神眠",
