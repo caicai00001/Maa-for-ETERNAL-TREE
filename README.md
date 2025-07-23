@@ -18,7 +18,7 @@ MET由 [MaaFramework](https://github.com/MaaXYZ/MaaFramework) 驱动
  - **继 Maa for ETERNAL TREE项目后续的迭代更新
 
 >[!NOTE]
->本项目已经停止维护，迁移至新项目 [MAATree](https://github.com/caicai00001/MAATree)
+>本项目已经停止维护，全新项目 [MAATree](https://github.com/caicai00001/MAATree)
 
  MET功能:
 
