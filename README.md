@@ -17,6 +17,9 @@ MET由 [MaaFramework](https://github.com/MaaXYZ/MaaFramework) 驱动
  - **MET 不会涉及任何对游戏客户端与服务器数据的直接读取、检测、分析、拦截和修改等操作，亦不会以任何方式修改任何游戏文件与游戏代码。**
  - **继 Maa for ETERNAL TREE项目后续的迭代更新
 
+>[!NOTE]
+>本项目已经停止维护，迁移至新项目 [MAATree](https://github.com/caicai00001/MAATree)
+
  MET功能:
 
  - 支持自动领取`神狱桃园乡`奖励
@@ -142,12 +145,5 @@ MET由 [MaaFramework](https://github.com/MaaXYZ/MaaFramework) 驱动
 
 本项目由 **[MaaFramework](https://github.com/MaaXYZ/MaaFramework)** 强力驱动！
 
-感谢 **[MFAWPF](https://github.com/SweetSmellFox/MFAWPF)** 提供的GUI!
-
-
-## 鸣谢
-
-本项目由 **[MaaFramework](https://github.com/MaaXYZ/MaaFramework)** 强力驱动！
- 
 感谢 **[MFAWPF](https://github.com/SweetSmellFox/MFAWPF)** 提供的GUI!
 
